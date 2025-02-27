@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://dd7bk7psvhu41"]
+[gd_scene load_steps=11 format=3 uid="uid://dd7bk7psvhu41"]
 
 [ext_resource type="Texture2D" uid="uid://yi7s7t1pckbm" path="res://arts/tilesets/floors/complete Castle tilesets.png" id="1_5w2cq"]
 [ext_resource type="Texture2D" uid="uid://xmjgwub6m0tl" path="res://arts/tilesets/bakery.png" id="1_8bdqs"]
 [ext_resource type="Texture2D" uid="uid://djy0ykjn7w3oi" path="res://arts/tilesets/Swamp Tileset.png" id="3_kosig"]
 [ext_resource type="PackedScene" uid="uid://2l2prsriud1o" path="res://scenes/player.tscn" id="5_fi0nx"]
+[ext_resource type="AudioStream" uid="uid://cb476fi32iqn5" path="res://music/castle theme.wav" id="5_qwl0g"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hy58r"]
 texture = ExtResource("1_8bdqs")
@@ -476,3 +477,8 @@ script = SubResource("GDScript_1g7kp")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(486, 245)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_qwl0g")
+volume_db = 12.895
+autoplay = true
