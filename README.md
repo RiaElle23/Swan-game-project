@@ -1,2 +1,2 @@
-# Swan game project
+# Swan's Quest Game
  
