@@ -1,0 +1,218 @@
+[gd_scene load_steps=29 format=3 uid="uid://iuqev57ngq7x"]
+
+[ext_resource type="Script" path="res://scenes/king_npc.gd" id="1_rt37k"]
+[ext_resource type="Texture2D" uid="uid://b3wdio00g8wfl" path="res://arts/characters/king npc.png" id="1_xm7cc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_63765"]
+atlas = ExtResource("1_xm7cc")
+region = Rect2(0, 0, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4kopn"]
+atlas = ExtResource("1_xm7cc")
+region = Rect2(64, 0, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qcp1g"]
+atlas = ExtResource("1_xm7cc")
+region = Rect2(128, 0, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e7rr2"]
+atlas = ExtResource("1_xm7cc")
+region = Rect2(192, 0, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_14b1g"]
+atlas = ExtResource("1_xm7cc")
+region = Rect2(0, 128, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xykyq"]
+atlas = ExtResource("1_xm7cc")
+region = Rect2(64, 128, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f68vk"]
+atlas = ExtResource("1_xm7cc")
+region = Rect2(128, 128, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pivn5"]
+atlas = ExtResource("1_xm7cc")
+region = Rect2(192, 128, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cljax"]
+atlas = ExtResource("1_xm7cc")
+region = Rect2(0, 192, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6nmrp"]
+atlas = ExtResource("1_xm7cc")
+region = Rect2(64, 192, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_og44h"]
+atlas = ExtResource("1_xm7cc")
+region = Rect2(128, 192, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g1g63"]
+atlas = ExtResource("1_xm7cc")
+region = Rect2(192, 192, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tnp6w"]
+atlas = ExtResource("1_xm7cc")
+region = Rect2(256, 192, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v3kme"]
+atlas = ExtResource("1_xm7cc")
+region = Rect2(320, 192, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aorep"]
+atlas = ExtResource("1_xm7cc")
+region = Rect2(384, 192, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8w4dn"]
+atlas = ExtResource("1_xm7cc")
+region = Rect2(0, 32, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aieuy"]
+atlas = ExtResource("1_xm7cc")
+region = Rect2(64, 32, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2vrgc"]
+atlas = ExtResource("1_xm7cc")
+region = Rect2(128, 32, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cq2aq"]
+atlas = ExtResource("1_xm7cc")
+region = Rect2(192, 32, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lrscv"]
+atlas = ExtResource("1_xm7cc")
+region = Rect2(256, 32, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c1df7"]
+atlas = ExtResource("1_xm7cc")
+region = Rect2(320, 32, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3rue6"]
+atlas = ExtResource("1_xm7cc")
+region = Rect2(384, 32, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bowuk"]
+atlas = ExtResource("1_xm7cc")
+region = Rect2(448, 32, 64, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3c7tx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_63765")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4kopn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qcp1g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e7rr2")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_14b1g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xykyq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f68vk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pivn5")
+}],
+"loop": true,
+"name": &"laughing",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cljax")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6nmrp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_og44h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g1g63")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tnp6w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v3kme")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aorep")
+}],
+"loop": true,
+"name": &"pointing",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8w4dn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aieuy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2vrgc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cq2aq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lrscv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c1df7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3rue6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bowuk")
+}],
+"loop": true,
+"name": &"walking",
+"speed": 9.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lfmcu"]
+radius = 5.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mtp1j"]
+radius = 19.3132
+
+[node name="king npc" type="CharacterBody2D"]
+script = ExtResource("1_rt37k")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_3c7tx")
+animation = &"idle"
+frame_progress = 0.889797
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 12)
+shape = SubResource("CircleShape2D_lfmcu")
+
+[node name="chat_detection_area" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="chat_detection_area"]
+position = Vector2(-1, 3)
+shape = SubResource("CircleShape2D_mtp1j")
+
+[node name="Timer" type="Timer" parent="chat_detection_area"]
+autostart = true
+
+[connection signal="body_entered" from="chat_detection_area" to="." method="_on_chat_detection_area_body_entered"]
+[connection signal="body_exited" from="chat_detection_area" to="." method="_on_chat_detection_area_body_exited"]

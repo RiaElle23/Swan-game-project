@@ -1,5 +1,6 @@
-[gd_scene load_steps=34 format=3 uid="uid://2l2prsriud1o"]
+[gd_scene load_steps=35 format=3 uid="uid://2l2prsriud1o"]
 
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_4e3bb"]
 [ext_resource type="Texture2D" uid="uid://d3lptpq710mac" path="res://arts/characters/player.png" id="1_ag7ws"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ognyg"]
@@ -246,27 +247,32 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ejvit"]
-radius = 6.08276
+radius = 4.47214
 
 [node name="player" type="CharacterBody2D"]
-z_index = 1
+z_index = 7
 y_sort_enabled = true
 disable_mode = 2
 motion_mode = 1
+script = ExtResource("1_4e3bb")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(1.19209e-07, -26)
-scale = Vector2(1.58985, 1.625)
+position = Vector2(1, -20)
+scale = Vector2(1.53125, 1.5625)
 sprite_frames = SubResource("SpriteFrames_kidgn")
-animation = &"laughing"
-speed_scale = 4.0
+animation = &"side_attack"
+speed_scale = 2.0
+offset = Vector2(0, -10)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-y_sort_enabled = true
-position = Vector2(-1, -6)
+position = Vector2(1, -14)
+rotation = -1.4399
 shape = SubResource("CircleShape2D_ejvit")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(107, 4)
+position = Vector2(4, -26)
+zoom = Vector2(1.5, 1.5)
+position_smoothing_speed = 8.0
+rotation_smoothing_speed = 8.0
 drag_horizontal_enabled = true
 drag_vertical_enabled = true

@@ -1,10 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://hvsoj0oj4uat"]
+[gd_scene load_steps=9 format=3 uid="uid://hvsoj0oj4uat"]
 
 [ext_resource type="Texture2D" uid="uid://cr2y3j4dryxq7" path="res://arts/tilesets/Town Wall Tileset.png" id="1_71088"]
 [ext_resource type="Texture2D" uid="uid://b4odtv5ge4s8d" path="res://arts/tilesets/Castle2.png" id="2_f1wih"]
 [ext_resource type="Texture2D" uid="uid://dd0yf224t8kag" path="res://arts/tilesets/castle tiles plss.png" id="3_fh6bh"]
 [ext_resource type="PackedScene" uid="uid://2l2prsriud1o" path="res://scenes/player.tscn" id="4_abwfi"]
-[ext_resource type="Script" path="res://scenes/player.gd" id="5_ed44h"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l5rup"]
 texture = ExtResource("1_71088")
@@ -192,6 +191,5 @@ layer_1/name = "castle"
 layer_1/tile_data = PackedInt32Array(1638423, 786433, 0, 1638442, 786433, 0, 1835040, 1310721, 6, 1703964, 131073, 2, 1703973, 131073, 2, 1835034, 1703937, 0, 1900582, 1703937, 0)
 
 [node name="player" parent="." instance=ExtResource("4_abwfi")]
-script = ExtResource("5_ed44h")
 
 [node name="Camera2D" type="Camera2D" parent="."]

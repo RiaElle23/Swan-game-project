@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://bsa6g3mkgh2to"]
+
+[ext_resource type="PackedScene" uid="uid://brin0gve4qj2j" path="res://scenes/Player/player.tscn" id="1_84ii0"]
+[ext_resource type="PackedScene" uid="uid://bqmkskahi0qc8" path="res://scenes/Interactables/crate.tscn" id="2_xitap"]
+[ext_resource type="Script" path="res://script/Interactables/damage.gd" id="3_q53p6"]
+[ext_resource type="PackedScene" uid="uid://dwjknuitxjnp4" path="res://scenes/UI/gui.tscn" id="4_ivlme"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_31c3u"]
+size = Vector2(28, 27)
+
+[node name="level_1" type="Node2D"]
+y_sort_enabled = true
+
+[node name="Player" parent="." instance=ExtResource("1_84ii0")]
+position = Vector2(162, 139)
+
+[node name="crate" parent="." instance=ExtResource("2_xitap")]
+position = Vector2(324, 142)
+
+[node name="crate2" parent="." instance=ExtResource("2_xitap")]
+position = Vector2(195, 63)
+
+[node name="killzone" type="Area2D" parent="."]
+script = ExtResource("3_q53p6")
+
+[node name="ColorRect" type="ColorRect" parent="killzone"]
+offset_left = 252.0
+offset_top = 89.0
+offset_right = 280.0
+offset_bottom = 116.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="killzone"]
+position = Vector2(266, 102.5)
+shape = SubResource("RectangleShape2D_31c3u")
+
+[node name="GUI" parent="." instance=ExtResource("4_ivlme")]
+
+[connection signal="body_entered" from="killzone" to="killzone" method="_on_body_entered"]

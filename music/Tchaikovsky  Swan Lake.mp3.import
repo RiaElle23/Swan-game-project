@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://3slhcly6gr5k"
+path="res://.godot/imported/Tchaikovsky  Swan Lake.mp3-3cb37a4584bea99bf773f43cc73d238a.mp3str"
+
+[deps]
+
+source_file="res://music/Tchaikovsky  Swan Lake.mp3"
+dest_files=["res://.godot/imported/Tchaikovsky  Swan Lake.mp3-3cb37a4584bea99bf773f43cc73d238a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
