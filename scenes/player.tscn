@@ -260,7 +260,8 @@ script = ExtResource("1_4e3bb")
 position = Vector2(1, -20)
 scale = Vector2(1.53125, 1.5625)
 sprite_frames = SubResource("SpriteFrames_kidgn")
-animation = &"side_attack"
+animation = &"side_walk"
+frame_progress = 0.993753
 speed_scale = 2.0
 offset = Vector2(0, -10)
 
